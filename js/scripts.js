@@ -118,7 +118,22 @@ $(function() {
 		$('[data-target], .fade-bg').removeClass('is-opened');
 		$('[data-open]').removeClass('is-active');
 	});
-	
+	$('.navigator ul li').on('click', function(e) {
+		e.preventDefault();
+		var t = $('[data-id="'+$(this).attr('data')+'"]');
+		$('html, body').stop().animate({
+			scrollTop: t.offset().top
+		}, 500);
+		//$(this).addClass('is-active').siblings().removeClass('is-active');
+	});
+	$(document).on('scroll', function() {
+		$('.navigator ul li').removeClass('is-active');
+		$('[data-id]').each(function() {
+			if ( $(document).scrollTop() >= $(this).offset().top-$(window).height()/2 ) {
+				$('.navigator ul li[data="'+$(this).attr('data-id')+'"]').addClass('is-active').siblings().removeClass('is-active');
+			}
+		});
+	});
 	
 	$(document).on('click', function(e) {
 		if ( !$(e.target).closest('.breadcrumbs .dropable').length && !$(e.target).closest('.breadcrumbs .drop').length ) {
