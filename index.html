@@ -36,7 +36,7 @@
 						<div class="form-e__item form-e__item_phone">
 							<input type="text" placeholder="Номер телефона *">
 						</div>
-						<div class="form-e__item form-e__item_email">
+						<div class="form-e__item form-e__item_email form-e__item_error">
 							<input type="text" placeholder="Ваш e-mail *">
 						</div>
 						<button class="form-e--button">Попробовать</button>
@@ -141,7 +141,7 @@
 								<li>с успехом сможет сдать государственные и международные экзамены;</li>
 								<li>сможет уверенно общаться за границей и найти востребованную работу в будущем.</li>
 							</ul>
-							<button class="form-e--button">Оставить заявку</button>
+							<button class="form-e--button" data-open="free-lesson">Оставить заявку</button>
 						</div>
 						<div class="tech__programm__video" data-ratio="0.575">
 							<a href="#" class="item scale">
@@ -459,6 +459,36 @@
 	</div>
 	<footer class="footer">
 	</footer>
+	<div class="fade-bg"></div>
+	<div class="modal modal_form" data-target="free-lesson">
+		<span class="modal--close"></span>
+		<span class="modal_form--title">Бесплатный урок</span>
+		<div class="form-e_modal">
+			<div class="form-e__item form-e__item_user">
+				<input type="text" placeholder="Ваше имя *">
+			</div>
+			<div class="form-e__item form-e__item_phone form-e__item_error">
+				<input type="text" placeholder="Номер телефона *">
+				<span class="message"><i>Введите номер телефона</i></span>
+			</div>
+			<div class="form-e__item form-e__item_email">
+				<input type="text" placeholder="Ваш e-mail *">
+			</div>
+			<button class="form-e--button">Попробовать</button>
+			<p>Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных</p>
+		</div>
+	</div>
+	<div class="modal modal_programm" data-target="lesson-about">
+		<span class="modal--close"></span>
+		<span class="modal_programm--title"><span>Программа обучения</span> Little Stars I</span>
+		<div class="modal_programm__content">
+			<h5><strong>Количество уроков:</strong> 72</h5>
+			<h5><strong>Возраст ученика:</strong> 3-4 года</h5>
+			<h5><strong>Навыки уровня:</strong></h5>
+			<p>Знают основные цвета, основные фразы приветствия и прощания, могут спеть 2 песни на английском языке, знают местоимения</p>
+			<h5><strong>Словарный запас на выходе:</strong> 40 слов</h5>
+		</div>
+	</div>
 	<script src="./js/libs.js"></script>
 	<script src="./js/scripts.js"></script>
 </body>
