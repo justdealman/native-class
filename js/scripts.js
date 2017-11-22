@@ -104,7 +104,7 @@ $(function() {
 		if ( !isMobile ) {
 			var diff = 30;
 		} else {
-			var diff = 15;
+			var diff = 20;
 		}
 		if ( h < $(window).scrollTop()+(diff*2) ) {
 			h = $(window).scrollTop()+diff;
@@ -134,13 +134,6 @@ $(function() {
 			}
 		});
 	});
-	
-	$(document).on('click', function(e) {
-		if ( !$(e.target).closest('.breadcrumbs .dropable').length && !$(e.target).closest('.breadcrumbs .drop').length ) {
-			$('.breadcrumbs .dropable').removeClass('is-active');
-		}
-	});
-
 	$('input, textarea').each(function() {
 		$(this).data('holder', $(this).attr('placeholder'));
 		$(this).focusin(function() {
