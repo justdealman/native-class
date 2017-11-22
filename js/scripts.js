@@ -141,4 +141,10 @@ $(function() {
 			$(this).attr('placeholder', $(this).data('holder'));
 		});
 	});
+	$('input[type="checkbox"]').uniform();
+	$('.agreement-drop').on('click', function(e) {
+		e.preventDefault();
+		var t = $(this).parents('.modal').find('.agreement-info');
+		t.stop().slideToggle(200);
+	});
 });
