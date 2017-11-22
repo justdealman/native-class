@@ -50,8 +50,7 @@ $(function() {
 		infinite: true,
 		fade: true,
 		cssEase: 'ease',
-		speed: 500,
-		adaptiveHeight: true
+		speed: 500
 	});
 	$('.tech__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		var pic = $(this).parents('.tech__content').find('.tech__pic .item');
@@ -70,8 +69,7 @@ $(function() {
 		dots: true,
 		infinite: true,
 		cssEase: 'ease',
-		speed: 500,
-		adaptiveHeight: true
+		speed: 500
 	});
 	
 	function startApp() {
