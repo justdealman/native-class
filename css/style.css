@@ -805,6 +805,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	position:relative;
 	width:1280px;
 	width:calc(100% + 40px);
+	padding:0 0 28px;
 	margin-left:-20px;
 	background:#24284f;
 }
@@ -827,13 +828,9 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	background:url('../img/teachers-next.png') no-repeat 0 0;
 }
 .teachers__slider .slick-dots {
-	position:absolute;
-	left:50%;
-	bottom:42px;
+	text-align:center;
 	font-size:0;
 	margin:0;
-	-webkit-transform:translateX(-50%);
-	transform:translateX(-50%);
 }
 .teachers__slider .slick-dots li {
 	display:inline-block;
@@ -865,7 +862,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	width:100%;
 	clear:both;
 	overflow:hidden;
-	padding:65px 9.5% 75px 10%;
+	padding:65px 9.5% 25px 10%;
 }
 .teachers__slider--photo {
 	float:left;
@@ -1885,7 +1882,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 		margin:0 0 20px;
 	}
 	.teachers__slider__item {
-		padding:40px 60px 40px;
+		padding:40px 60px 10px;
 	}
 	.teachers__slider .slick-prev {
 		left:20px;
@@ -1907,7 +1904,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 		padding-left:24px;
 	}
 	.teachers__slider .slick-dots {
-		bottom:20px;
+		padding:0 15px;
 	}
 	.tech__programm__video {
 		display:none;
@@ -2364,7 +2361,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 		margin-left:-20px;
 	}
 	.teachers__slider__item {
-		padding:30px 40px;
+		padding:30px 40px 10px;
 	}
 	.teachers__slider .slick-prev {
 		left:10px;
