@@ -126,20 +126,10 @@ $(function() {
 		});
 	});
 	$('input[type="checkbox"]').uniform();
-	$('.agreement-drop').on('click', function(e) {
+	$(document).on('click', '.agreement-drop', function(e) {
 		e.preventDefault();
 		var t = $(this).parents('.modal').find('.agreement-info');
 		t.stop().slideToggle(200);
-	});
-	$('.navigator').on('mouseenter', function() {
-		var size = $(this).find('li').size();
-		var delay = 50;
-		var t = $(this);
-		for ( var i=0; i<size; i++ ) {
-			setTimeout(function() {
-			t.find('li').eq(i).find('span').addClass('is-visible');
-			}, 200+i*delay);
-		}
 	});
 });
 $(function() {
