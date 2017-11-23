@@ -1573,13 +1573,25 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	top:50%;
 	z-index:100;
 	padding:12px 0 14px;
-	background:rgba(255,255,255,0);
-	border-radius:10px 0 0 10px;
 	-webkit-transform:translateY(-50%);
 	transform:translateY(-50%);
 }
-.navigator:hover {
+.navigator .bg {
+	position:absolute;
+	right:0;
+	top:0;
+	width:0;
+	height:100%;
+	opacity:1;
 	background:rgba(255,255,255,0.9);
+	-webkit-border-radius:10px 0 0 10px;
+	border-radius:10px 0 0 10px;
+	-webkit-transition:width 0.3s ease-out;
+	transition:width 0.3s ease-out;
+}
+.navigator__row {
+	position:relative;
+	z-index:1;
 }
 .navigator ul {
 	margin:0;
@@ -1618,12 +1630,16 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	display:inline-block;
 	color:#488dce;
 	padding-right:24px;
-	display:none;
+	opacity:0;
+	visibility:hidden;
+	transform:translateX(10px);
 	-webkit-transition:all 0.3s ease;
 	transition:all 0.3s ease;
 }
-.navigator:hover ul li span {
-	display:inline-block;
+.navigator ul li span.is-visible {
+	opacity:1;
+	visibility:visible;
+	transform:translateX(0);
 }
 .navigator ul li.is-active {
 	font-weight:600;
