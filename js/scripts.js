@@ -69,7 +69,8 @@ $(function() {
 		dots: true,
 		infinite: true,
 		cssEase: 'ease',
-		speed: 500
+		speed: 500,
+		adaptiveHeight: true
 	});
 	
 	function startApp() {
