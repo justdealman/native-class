@@ -84,6 +84,14 @@ $(function() {
 		draggable: false,
 		swipe: false
 	});
+	$('.teachers-md__slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		arrows: true,
+		dots: true,
+		cssEase: 'ease',
+		speed: 500
+	});
 	function setCampsBg() {
 		var rbgWidth = $(window).width()-$('.camps__slider .slick-current .camps__group:nth-child(2n+1) .camps__about').offset().left;
 		$('.camps__group:nth-child(2n+1) .camps__group--bg').width(rbgWidth);
@@ -185,6 +193,14 @@ $(function() {
 		e.preventDefault();
 		var t = $(this).parents('.modal').find('.agreement-info');
 		t.stop().slideToggle(200);
+	});
+	$('[data-tab-link]').on('click', function(e) {
+		e.preventDefault();
+		var t = $(this).parents('[data-tabs]').find('[data-tab-item="'+$(this).attr('href')+'"]');
+		if ( !t.hasClass('is-opened') ) {
+			t.addClass('is-opened').siblings('[data-tab-item]').removeClass('is-opened');
+			$(this).parent().addClass('is-active').siblings().removeClass('is-active');
+		}
 	});
 });
 $(function() {
