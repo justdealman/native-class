@@ -229,7 +229,10 @@ $(function() {
 	function showItems(i,t) {
 		showTimer.push(
 			setTimeout(function() {
-				t.find('li[data="'+i+'"] span').addClass('is-visible');
+				t.find('li[data="'+i+'"] span').show(function() {
+					$(this).addClass('is-visible');
+					setBg(t,t.width());
+				});
 			}, baseDelay+delay*i)
 		);
 	}
@@ -242,6 +245,9 @@ $(function() {
 		hideTimer.push(
 			setTimeout(function() {
 				t.find('li[data="'+i+'"] span').removeClass('is-visible');
+				setTimeout(function() {
+					t.find('li[data="'+i+'"] span').hide();
+				}, 300);
 			}, delay*i)
 		);
 	}
@@ -256,7 +262,6 @@ $(function() {
 		var t = $(this);
 		var size = t.find('li').size();
 		clearTimeout(bgDelay);
-		setBg(t,t.width());
 		for ( var i=1; i<=size; i++ ) {
 			showItems(i,t)
 		}
