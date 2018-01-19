@@ -2424,7 +2424,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	width:1260px;
 	width:calc(100% + 20px);
 	font-size:0;
-	margin:0 0 20px -20px;
+	margin:0 0 20px -10px;
 }
 .learning-md__item {
 	display:inline-block;
@@ -2464,7 +2464,6 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 }
 .item-learning--title {
 	display:block;
-	font-size:2;
 	font-size:28px;
 	line-height:34px;
 	font-weight:500;
@@ -2510,7 +2509,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	font-family:'Spectral SC', serif;
 	text-align:left;
 	vertical-align:middle;
-	padding:5px 30px 7px;
+	padding:5px 25px 7px;
 	background:#252443;
 }
 .table td {
@@ -2753,7 +2752,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 .teachers-md__slider .slick-prev,
 .teachers-md__slider .slick-next {
 	position:absolute;
-	top:41.5%;
+	top:42%;
 	display:block;
 	width:60px;
 	height:60px;
@@ -2774,6 +2773,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	top:50%;
 	width:12px;
 	height:22px;
+	margin-top:-11px;
 	background-image:url('../img/slick-arrows.png');
 	background-repeat:no-repeat;
 }
@@ -3501,7 +3501,34 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 		left:50%;
 		margin-left:10px;
 	}
+	.contacts-md__content {
+		left:30px;
+		margin-left:0;
+	}
+	.classes-md__discount--bg {
+		right:0;
+		background-size:contain !important;
+	}
+	.item-learning--bg {
+		display:none;
+	}
+	.item-learning {
+		min-height:240px;
+	}
+	.item-learning__row {
+		padding-left:30px;
+	}
+	.welcome-md--bg {
+		width:50%;
+	}
+	.welcome-md__content {
+		padding-left:40px;
+	}
+	.create-md__content {
+		padding-left:40px;
+	}
 }
+/*tablet*/
 @media all and (max-width:999px) {
 	.header--slogan {
 		display:none;
@@ -4065,7 +4092,583 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 		font-size:16px;
 		line-height:22px;
 	}
+	.header--phone_md {
+		right:155px;
+	}
+	.welcome-md--bg {
+		width:45%;
+	}
+	.welcome-md__content {
+		min-height:0;
+		padding:26px 20px 16px 30px;
+		margin-left:45%;
+	}
+	.welcome-md--title {
+		font-size:30px;
+		line-height:36px;
+		margin:0 0 16px;
+	}
+	.welcome-md--subtitle {
+		font-size:24px;
+		line-height:30px;
+		margin:0 0 18px;
+	}
+	.welcome-md--range {
+		font-size:20px;
+		line-height:26px;
+	}
+	.welcome-md ul li {
+		margin:0 0 20px;
+	}
+	.welcome-md ul li:before {
+		display:none;
+	}
+	.welcome-md p {
+		font-size:16px;
+		line-height:25px;
+	}
+	.benefits-md__item {
+		width:33.33%;
+	}
+	.benefits-md__row {
+		padding:30px 10px 5px;
+	}
+	.benefits-md--title {
+		max-width:none;
+		font-size:30px;
+		line-height:36px;
+		padding:0;
+		margin:0 10px 30px;
+	}
+	.benefits-md__item {
+		padding:25px 10px 0;
+		margin:0 0 25px;
+	}
+	.benefits-md--num {
+		font-size:120px;
+		line-height:90px;
+	}
+	.benefits-md__item p {
+		font-size:16px;
+		line-height:24px;
+	}
+	.create-md--pic {
+		display:none;
+	}
+	.create-md__row {
+		padding:26px 20px 15px;
+	}
+	.create-md__content {
+		display:block;
+		width:auto;
+		padding:0;
+	}
+	.create-md--title {
+		font-size:30px;
+		line-height:36px;
+		margin:0 0 20px;
+	}
+	.create-md--start {
+		font-size:20px;
+		line-height:24px;
+		margin:0 0 16px;
+	}
+	.create-md--entry {
+		font-size:22px;
+		line-height:26px;
+		margin:0 0 16px;
+	}
+	.create-md--additional {
+		font-size:20px;
+		line-height:24px;
+		margin:0 0 16px;
+	}
+	.create-md__content p {
+		font-size:16px;
+		line-height:24px;
+	}
+	.create-md--button {
+		margin-top:18px;
+	}
+	.goal-md__col {
+		display:block;
+		width:auto;
+		min-height:0;
+		padding:26px 20px 10px;
+	}
+	.goal-md__content {
+		max-width:none;
+	}
+	.goal-md--title {
+		font-size:30px;
+		line-height:36px;
+		margin:0 0 16px;
+	}
+	.goal-md ul li {
+		margin:0 0 20px;
+	}
+	.goal-md--text {
+		height:48px;
+		font-size:16px;
+		line-height:24px;
+		padding-left:50px;
+	}
+	.goal-md--num {
+		font-size:60px;
+		line-height:50px;
+		margin-top:-24px;
+	}
+	.goal-md--bg {
+		display:none;
+	}
+	.learning-md__row {
+		padding:26px 20px 10px;
+	}
+	.learning-md--title {
+		font-size:30px;
+		line-height:36px;
+		margin:0 0 20px;
+	}
+	.learning-md__grid {
+		margin-bottom:10px;
+	}
+	.learning-md__item {
+		width:100%;
+		margin:0 0 15px;
+	}
+	.item-learning--bg {
+		display:block;
+	}
+	.item-learning__row {
+		padding-left:280px;
+	}
+	.item-learning--title {
+		font-size:24px;
+		line-height:30px;
+		margin:0 0 10px;
+	}
+	.classes-md__row {
+		padding:26px 20px 10px;
+	}
+	.classes-md--title {
+		font-size:30px;
+		line-height:36px;
+		margin:0 0 20px;
+	}
+	.classes-md__table {
+		width:calc(100% + 40px);
+		overflow-x:auto;
+		margin:0 0 20px -20px;
+	}
+	.table th {
+		font-size:15px;
+		line-height:22px;
+		padding:5px 10px 7px;
+	}
+	.table td {
+		font-size:15px;
+		line-height:22px;
+		padding:15px 10px 17px;
+	}
+	.table p {
+		font-size:15px;
+		line-height:22px;
+	}
+	.table--title {
+		font-size:17px;
+		line-height:22px;
+	}
+	.table th:first-child,
+	.table td:first-child {
+		padding-left:20px;
+	}
+	.table th:last-child,
+	.table td:last-child {
+		padding-right:20px;
+	}
+	.table tr:first-child td {
+		padding-top:19px;
+	}
+	.table tr:last-child td {
+		padding-bottom:19px;
+	}
+	.table {
+		width:1000px;
+	}
+	.classes-md__discount {
+		margin:0 0 20px;
+	}
+	.classes-md__discount--content {
+		min-height:0;
+		max-width:70%;
+		padding:26px 20px 13px;
+	}
+	.classes-md__discount--title {
+		min-height:0;
+		font-size:26px;
+		line-height:32px;
+		margin:0 0 25px;
+	}
+	.classes-md__discount--title br {
+		display:none;
+	}
+	.teachers-md__row {
+		padding:26px 20px 10px;
+	}
+	.teachers-md--title {
+		font-size:30px;
+		line-height:36px;
+		margin:0 0 20px;
+	}
+	.teachers-md__slider .item {
+		padding:0 10px;
+	}
+	.teachers-md__slider {
+		padding:0;
+		margin:0 0 20px;
+	}
+	.teachers-md__slider .slick-prev,
+	.teachers-md__slider .slick-next {
+		width:40px;
+	}
+	.teachers-md__slider .slick-prev:before {
+		left:8px;
+	}
+	.teachers-md__slider .slick-next:before {
+		right:8px;
+	}
+	.item-teacher__content {
+		padding:16px 15px 8px 20px;
+	}
+	.item-teacher--title {
+		font-size:22px;
+		line-height:26px;
+		margin:0 0 6px;
+	}
+	.item-teacher--subtitle {
+		font-size:15px;
+		line-height:22px;
+	}
+	.item-teacher ul {
+		margin:10px 0 0;
+	}
+	.item-teacher ul li {
+		font-size:15px;
+		line-height:22px;
+		padding-left:22px;
+		margin:0 0 10px;
+	}
+	.teachers-md__slider .slick-dots {
+		margin-top:19px;
+	}
+	.schedule-md__row {
+		padding:26px 20px 10px;
+	}
+	.schedule-md--title {
+		font-size:30px;
+		line-height:36px;
+		margin:0 0 20px;
+	}
+	.schedule-md__nav a {
+		font-size:22px;
+		line-height:26px;
+	}
+	.schedule-md__nav {
+		margin:0 0 10px;
+	}
+	.schedule-md__nav li {
+		padding:0 10px;
+	}
+	.schedule-md__table {
+		margin-bottom:20px;
+	}
+	.format-md__row {
+		padding:26px 20px 10px;
+	}
+	.format-md--title {
+		font-size:30px;
+		line-height:36px;
+		margin:0 0 20px;
+	}
+	.format-md__text p {
+		font-size:15px;
+	}
+	.format-md__text {
+		max-width:none;
+		margin:0 0 20px;
+	}
+	.format-md__desc {
+		padding:26px 10px 10px;
+	}
+	.format-md__desc li {
+		padding:0 10px;
+		margin:0 0 15px;
+	}
+	.format-md__list {
+		padding:20px 10px 10px;
+		margin:0 0 20px;
+	}
+	.format-md__list ul {
+		margin:0 0 6px;
+	}
+	.format-md__list ul li {
+		padding:0 10px;
+	}
+	.format-md__list--tip {
+		margin:0 0 6px;
+	}
+	.format-md__list--title {
+		font-size:22px;
+		line-height:26px;
+		margin:0 0 6px;
+	}
+	.format-md__list--age {
+		font-size:17px;
+		line-height:22px;
+		margin:0 0 6px;
+	}
+	.format-md__list--month {
+		font-size:22px;
+		line-height:26px;
+		margin:0 0 8px;
+	}
+	.format-md__list p {
+		font-size:15px;
+		line-height:22px;
+		margin:0 0 8px;
+	}
+	.format-md__more p {
+		font-size:15px;
+		line-height:22px;
+		margin:0 0 10px;
+	}
+	.format-md__more .entry--button {
+		margin-top:12px;
+	}
+	.license-md__row {
+		padding:26px 10px 10px;
+	}
+	.license-md--title {
+		font-size:30px;
+		line-height:36px;
+		margin:0 0 20px;
+	}
+	.license-md__item {
+		padding:0 10px;
+		margin:0 0 20px;
+	}
+	.guarantee-md {
+		margin:0 0 20px;
+	}
+	.guarantee-md__row {
+		padding:26px 20px 10px;
+	}
+	.guarantee-md--title {
+		font-size:30px;
+		line-height:36px;
+		margin:0 0 20px;
+	}
+	.guarantee-md__content--title {
+		font-size:20px;
+		line-height:26px;
+		margin:0 0 16px 50px;
+	}
+	.guarantee-md__text:before {
+		top:6px;
+		width:30px;
+		height:27px;
+		background-size:30px 27px;
+	}
+	.guarantee-md__text {
+		height:40px;
+		padding-left:50px;
+	}
+	.guarantee-md__text p {
+		font-size:16px;
+		line-height:20px;
+	}
+	.guarantee-md__text--more {
+		font-size:12px;
+		line-height:15px;
+	}
+	.guarantee-md__content {
+		width:calc(100% - 180px);
+	}
+	.guarantee-md__pic {
+		width:180px;
+		margin:6px 0 0;
+		padding:0 0 0 30px;
+	}
+	.form-md {
+		max-width:none;
+		padding:26px 11px 18px;
+		margin:0 20px 20px;
+	}
+	.form-md--title {
+		font-size:30px;
+		line-height:36px;
+		margin:0 9px 20px;
+	}
+	.form-md--subtitle {
+		font-size:20px;
+		line-height:24px;
+		margin:-16px 0 20px;
+	}
+	.form-md__row {
+		margin:0;
+	}
+	.form-md--tip {
+		margin:0 auto 18px;
+	}
+	.contacts-md__content {
+		left:20px;
+		top:20px;
+		width:380px;
+		padding:16px 20px;
+	}
+	.contacts-md__content--title {
+		font-size:15px;
+		line-height:22px;
+	}
+	.contacts-md__content--subtitle {
+		font-size:15px;
+		line-height:22px;
+	}
+	.contacts-md__content hr {
+		height:4px;
+	}
+	.contacts-md__content p {
+		font-size:15px;
+		line-height:22px;
+	}
+	.contacts-md {
+		height:480px;
+	}
+	.contacts-md__content p span {
+		font-size:17px;
+		margin:-1px 0 1px;
+	}
+	.contacts-md__content hr {
+		height:2px;
+	}
+	.form-md {
+		margin:0 0 20px;
+		border-left-width:0;
+		border-right-width:0;
+		-webkit-border-radius:0;
+		border-radius:0;
+	}
+	.form-md__item {
+		width:100%;
+	}
+	.form-md--title {
+		line-height:30px;
+	}
+	.form-md--subtitle {
+		line-height:22px;
+	}
+	.form-md--button {
+		min-width:280px;
+	}
+	.guarantee-md__pic {
+		display:none;
+	}
+	.guarantee-md__content {
+		width:auto;
+	}
+	.guarantee-md--title {
+		line-height:30px;
+	}
+	.guarantee-md__content--title {
+		margin-left:0;
+	}
+	.license-md__item {
+		width:100%;
+	}
+	.format-md__desc {
+		width:calc(100% + 40px);
+		margin-left:-20px;
+	}
+	.format-md__list {
+		width:calc(100% + 40px);
+		margin-left:-20px;
+		border-width:0;
+		border-bottom-width:1px;
+		-webkit-border-radius:0;
+		border-radius:0;
+	}
+	.format-md__list--tip {
+		margin:0 10px 6px;
+	}
+	.schedule--table th {
+		width:120px;
+		font-size:18px;
+		line-height:24px;
+		padding:10px 10px 10px 10px;
+	}
+	.schedule--table td {
+		font-size:15px;
+		line-height:20px;
+		padding:11px 20px 13px 20px;
+	}
+	.schedule--table tr:first-child th {
+		padding-top:14px;
+	}
+	.schedule--table tr:first-child td {
+		padding-top:15px;
+	}
+	.schedule--table tr:last-child td {
+		padding-bottom:16px;
+	}
+	.schedule--table tr:last-child th {
+		padding-bottom:16px;
+	}
+	.schedule-md__nav {
+		margin:0 0 14px;
+	}
+	.schedule-md__nav a {
+		font-size:18px;
+		line-height:22px;
+	}
+	.schedule-md__nav li {
+		margin:0 0 6px;
+	}
+	.teachers-md--title {
+		line-height:32px;
+	}
+	.classes-md__discount {
+		width:calc(100% + 40px);
+		margin:0 0 20px -20px;
+	}
+	.classes-md__discount--content {
+		max-width:none;
+	}
+	.classes-md__discount--bg {
+		display:none;
+	}
+	.item-learning {
+		min-height:0;
+	}
+	.classes-md__discount--title {
+		margin:0 0 20px;
+	}
+	.learning-md--title {
+		line-height:32px;
+	}
+	.goal-md--title {
+		line-height:32px;
+	}
+	.create-md--title {
+		line-height:32px;
+	}
+	.benefits-md--title {
+		line-height:32px;
+	}
+	.benefits-md__item {
+		margin:0 0 20px;
+	}
 }
+/*mmobile*/
 @media all and (max-width:719px) {
 	.header__row {
 		height:60px;
@@ -4514,5 +5117,53 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	.contract--link a {
 		font-size:14px;
 		line-height:20px;
+	}
+	.welcome-md--bg {
+		display:none;
+	}
+	.welcome-md__content {
+		padding-left:20px;
+		margin-left:0;
+	}
+	.welcome-md--title {
+		line-height:32px;
+	}
+	.welcome-md--range {
+		font-size:18px;
+		line-height:24px;
+	}
+	.benefits-md__item {
+		width:100%;
+	}
+	.item-learning--bg {
+		display:none;
+	}
+	.item-learning__row {
+		padding:21px 20px 20px;
+	}
+	.format-md__desc li {
+		width:100%;
+	}
+	.format-md__list ul li {
+		width:100%;
+	}
+	.contacts-md__content {
+		position:static;
+		width:auto;
+	}
+	#contacts-md--map {
+		position:static;
+		height:280px;
+	}
+	.header--logo_md {
+		width:147px;
+		height:24px;
+		margin-top:16px;
+		background-size:147px 24px;
+	}
+	.header--phone_md {
+		right:20px;
+		top:18px;
+		margin:0;
 	}
 }

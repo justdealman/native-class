@@ -90,7 +90,22 @@ $(function() {
 		arrows: true,
 		dots: true,
 		cssEase: 'ease',
-		speed: 500
+		speed: 500,
+		responsive: [
+			{
+				breakpoint: 999,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			}, {
+				breakpoint: 719,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
 	});
 	function setCampsBg() {
 		var rbgWidth = $(window).width()-$('.camps__slider .slick-current .camps__group:nth-child(2n+1) .camps__about').offset().left;
