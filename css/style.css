@@ -2691,13 +2691,25 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	border-radius:6px;
 }
 .item-teacher__content {
-	overflow-y:auto;
+	overflow:hidden;
 	position:absolute;
 	left:0;
-	bottom:0;
+	top:100%;
 	width:100%;
-	padding:33px 25px 14px 30px;
+	height:100%;
 	background:rgba(255,255,255,0.95);
+	-webkit-transform:translateY(-129px);
+	transform:translateY(-129px);
+	-webkit-transition:transform 0.4s ease;
+	transition:transform 0.4s ease;
+}
+.item-teacher__header {
+	padding:23px 25px 14px 30px;
+}
+.item-teacher:hover .item-teacher__content {
+	overflow-y:auto;
+	-webkit-transform:translateY(-100%);
+	transform:translateY(-100%);
 }
 .item-teacher--title {
 	display:block;
@@ -2741,13 +2753,14 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	top:0;
 }
 .item-teacher__more {
-	display:none;
-}
-.item-teacher:hover .item-teacher__content {
-	height:100%;
+	margin-top:-14px;
+	padding:0 25px 14px 30px;
+	opacity:0;
+	-webkit-transition:opacity 0.4s ease;
+	transition:opacity 0.4s ease;
 }
 .item-teacher:hover .item-teacher__more {
-	display:block;
+	opacity:1;
 }
 .teachers-md__slider .slick-prev,
 .teachers-md__slider .slick-next {
@@ -4337,8 +4350,12 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	.teachers-md__slider .slick-next:before {
 		right:8px;
 	}
-	.item-teacher__content {
+	.item-teacher__header {
 		padding:16px 15px 8px 20px;
+	}
+	.item-teacher__more {
+		margin-top:-8px;
+		padding:0 15px 8px 20px;
 	}
 	.item-teacher--title {
 		font-size:22px;
