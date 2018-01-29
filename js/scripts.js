@@ -168,6 +168,29 @@ $(function() {
 			'transform': 'translateY(-'+t.outerHeight()+'px)'
 		});
 	});
+	$('.info-cc__gallery').slick({
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		arrows: true,
+		dots: false,
+		cssEase: 'ease',
+		speed: 500,
+		responsive: [
+			{
+				breakpoint: 999,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			}, {
+				breakpoint: 719,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
 	function startApp() {
 		detectDevice();
 		if ( justSwitched ) {
@@ -182,7 +205,7 @@ $(function() {
 			setCampsBg();
 			setCampNavArrow();
 		}
-		if ( $('.teachers-md').length ) {
+		if ( $('.teachers-md__slider').length ) {
 			setTeachersCards();
 		}
 	}
@@ -241,6 +264,10 @@ $(function() {
 			t.addClass('is-opened').siblings('[data-tab-item]').removeClass('is-opened');
 			$(this).parent().addClass('is-active').siblings().removeClass('is-active');
 		}
+	});
+	$('.faq-cc__group--title').on('click', function(e) {
+		e.preventDefault();
+		$(this).toggleClass('is-active');
 	});
 });
 $(function() {
