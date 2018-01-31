@@ -269,6 +269,33 @@ $(function() {
 		e.preventDefault();
 		$(this).toggleClass('is-active');
 	});
+	$('.schedule-cc__nav a').on('click', function(e) {
+		e.preventDefault();
+		var p = $(this).parents('li');
+		if ( !p.hasClass('is-active') ) {
+			var t = $(this).parents('.schedule-cc').find('.schedule-cc__tab[data-tab="'+$(this).attr('href')+'"]');
+			t.addClass('is-opened').siblings('[data-tab]').removeClass('is-opened');
+			p.addClass('is-active').siblings().removeClass('is-active');
+		}
+	});
+	$('[data-tip]').on('mouseenter', function() {
+		$('.tip-message').remove();
+		var t = $(this);
+		$('body').append('<div class="tip-message">\
+			<span class="tip-message--header">'+t.attr('data-tip-title')+'</span>\
+			<div class="tip-message__content">\
+				<p>'+t.attr('data-tip-message')+'</p>\
+			</div>\
+		');
+		var e = $('.tip-message');
+		e.css({
+			'left': t.offset().left+t.outerWidth()+'px',
+			'top': t.offset().top-e.find('.tip-message--header').outerHeight()+'px'
+		});
+	});
+	$('[data-tip]').on('mouseleave', function() {
+		$('.tip-message').remove();
+	});
 });
 $(function() {
 	var baseDelay = 250;
