@@ -12,6 +12,20 @@
 </head>
 <body>
 	<div class="wrapper">
+		<div class="panel">
+			<div class="panel__row">
+				<div class="panel__lang">
+					<div class="panel__lang--flag">
+						<img src="./img/flag-ru.png" width="" height="" class="img-cover" alt="">
+					</div>
+					<ul>
+						<li>Рус</li>
+						<li><a href="#">Eng</a></li>
+					</ul>
+				</div>
+				<span class="panel--register">Summer Camp 2018, в наличии места.<br> <a href="#" data-open="registration">Зарегистрируйтесь сейчас!</a></span>
+			</div>
+		</div>
 		<header class="header">
 			<div class="header__row header__row_cc">
 				<span class="header--logo_cc"></span>
@@ -1014,6 +1028,73 @@
 			<span class="footer--author">Разработка сайта – <img src="./img/letsrock-logo.png" width="141" height="31" alt=""></span>
 		</div>
 	</footer>
+	<div class="modal modal_programm" data-target="registration">
+		<span class="modal--close"></span>
+		<span class="modal_programm--title"><span>Summer camp 2018</span> Форма регистрации</span>
+		<div class="modal_programm__content">
+			<div class="register">
+				<ul class="register__steps">
+					<li class="is-active"><span>1</span>Информация о ребенке</li>
+					<li><span>2</span>Информация о родителе</li>
+					<li><span>3</span>Медицинская информация</li>
+				</ul>
+				<span class="register--title">Информация о ребенке</span>
+				<div class="register__item">
+					<label>Имя студента <i>*</i></label>
+					<input type="text" class="name" placeholder="Имя">
+					<input type="text" class="surname" placeholder="Фамилия">
+				</div>
+				<div class="register__item">
+					<label>Дата рождения <i>*</i></label>
+					<input type="text" class="date" placeholder="ДД / ММ / ГГГГ">
+					<i class="calendar-icon"></i>
+				</div>
+				<div class="register__item">
+					<label>Фотография</label>
+					<span class="register--file">Выберите файл</span>
+					<input type="file">
+					<span class="register--filename"></span>
+				</div>
+				<div class="register__item">
+					<label>Место рождения <i>*</i></label>
+					<input type="text">
+				</div>
+				<div class="register__item">
+					<label>Национальность <i>*</i></label>
+					<input type="text">
+				</div>
+				<div class="register__item">
+					<label>Серия и номер паспорта</label>
+					<input type="text">
+				</div>
+				<div class="register__item">
+					<label>Ксерокопия паспорта</label>
+					
+				</div>
+				<div class="register__item">
+					<label>Родной язык <i>*</i></label>
+					<input type="text">
+				</div>
+				<div class="register__item">
+					<label>Пол <i>*</i></label>
+					<ul class="register__gender">
+						<li><input type="radio" name="gender" checked>Мужской</li>
+						<li><input type="radio" name="gender">Женский</li>
+					</ul>
+				</div>
+				<hr>
+				<span class="register--title">Выберите летнюю смену</span>
+				<div class="register__item">
+					<label>Летняя смена <i>*</i></label>
+					<select>
+						<option>Смена A - 6 недель</option>
+						<option>Смена A - 6 недель</option>
+					</select>
+				</div>
+				<button class="register--button">Далее</button>
+			</div>
+		</div>
+	</div>
 	<div class="fade-bg"></div>
 	<script src="./js/libs.js"></script>
 	<script src="./js/scripts.js"></script>

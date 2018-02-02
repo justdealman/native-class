@@ -251,7 +251,7 @@ $(function() {
 			$(this).attr('placeholder', $(this).data('holder'));
 		});
 	});
-	$('input[type="checkbox"]').uniform();
+	$('input[type="checkbox"], input[type="radio"]').uniform();
 	$(document).on('click', '.agreement-drop', function(e) {
 		e.preventDefault();
 		var t = $(this).parents('.modal').find('.agreement-info');
@@ -299,6 +299,13 @@ $(function() {
 		if ( !isMobile ) {
 			$('.tip-message').remove();
 		}
+	});
+	$('.register--file').on('click', function() {
+		$(this).siblings('input[type="file"]').trigger('click');
+	});
+	$('.register__item input[type="file"]').on('change', function() {
+		var t = $(this).parents('.register__item').find('.register--filename');
+		t.text($(this).val().split('\\').pop());
 	});
 });
 $(function() {
