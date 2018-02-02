@@ -279,22 +279,26 @@ $(function() {
 		}
 	});
 	$('[data-tip]').on('mouseenter', function() {
-		$('.tip-message').remove();
-		var t = $(this);
-		$('body').append('<div class="tip-message">\
-			<span class="tip-message--header">'+t.attr('data-tip-title')+'</span>\
-			<div class="tip-message__content">\
-				<p>'+t.attr('data-tip-message')+'</p>\
-			</div>\
-		');
-		var e = $('.tip-message');
-		e.css({
-			'left': t.offset().left+t.outerWidth()+'px',
-			'top': t.offset().top-e.find('.tip-message--header').outerHeight()+'px'
-		});
+		if ( !isMobile ) {
+			$('.tip-message').remove();
+			var t = $(this);
+			$('body').append('<div class="tip-message">\
+				<span class="tip-message--header">'+t.attr('data-tip-title')+'</span>\
+				<div class="tip-message__content">\
+					<p>'+t.attr('data-tip-message')+'</p>\
+				</div>\
+			');
+			var e = $('.tip-message');
+			e.css({
+				'left': t.offset().left+t.outerWidth()+'px',
+				'top': t.offset().top-e.find('.tip-message--header').outerHeight()+'px'
+			});
+		}
 	});
 	$('[data-tip]').on('mouseleave', function() {
-		$('.tip-message').remove();
+		if ( !isMobile ) {
+			$('.tip-message').remove();
+		}
 	});
 });
 $(function() {
