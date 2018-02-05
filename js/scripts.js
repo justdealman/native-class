@@ -205,7 +205,7 @@ $(function() {
 			setCampsBg();
 			setCampNavArrow();
 		}
-		if ( $('.teachers-md__slider').length ) {
+		if ( $('.item-teacher').length ) {
 			setTeachersCards();
 		}
 	}
@@ -306,6 +306,13 @@ $(function() {
 	$('.register__item input[type="file"]').on('change', function() {
 		var t = $(this).parents('.register__item').find('.register--filename');
 		t.text($(this).val().split('\\').pop());
+	});
+	if ( $('.welcome-wn__counter').length ) {
+		var targetDay = new Date(2018, 3-1, 1);
+		$('.welcome-wn__counter').countdown({until: targetDay});
+	}
+	$('.info-wn__faq--title').on('click', function() {
+		$(this).toggleClass('is-opened');
 	});
 });
 $(function() {
